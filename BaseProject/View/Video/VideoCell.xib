@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="188" id="gnq-gb-nnw" customClass="VideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gnq-gb-nnw" id="PlP-NZ-gQo">
+                <frame key="frameInset" width="375" height="187"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBV-X0-MWk">
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tK1-eS-LXt">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKs-oH-ay2">
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <connections>
+                            <action selector="play:" destination="gnq-gb-nnw" eventType="touchUpInside" id="Wn6-gb-HHf"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="NKs-oH-ay2" secondAttribute="trailing" constant="10" id="0KN-qZ-JpS"/>
+                    <constraint firstAttribute="bottom" secondItem="NKs-oH-ay2" secondAttribute="bottom" constant="10" id="623-UP-3N5"/>
+                    <constraint firstAttribute="trailing" secondItem="tK1-eS-LXt" secondAttribute="trailing" constant="10" id="Ckc-bw-w5r"/>
+                    <constraint firstItem="iBV-X0-MWk" firstAttribute="leading" secondItem="PlP-NZ-gQo" secondAttribute="leading" constant="10" id="Dob-RN-uNi"/>
+                    <constraint firstItem="NKs-oH-ay2" firstAttribute="top" secondItem="tK1-eS-LXt" secondAttribute="bottom" constant="10" id="Ds1-w0-G08"/>
+                    <constraint firstItem="NKs-oH-ay2" firstAttribute="leading" secondItem="PlP-NZ-gQo" secondAttribute="leading" constant="10" id="FfP-ad-bp0"/>
+                    <constraint firstAttribute="trailing" secondItem="iBV-X0-MWk" secondAttribute="trailing" constant="10" id="Gsl-K8-DTs"/>
+                    <constraint firstItem="iBV-X0-MWk" firstAttribute="top" secondItem="PlP-NZ-gQo" secondAttribute="top" constant="15" id="gEN-ab-4th"/>
+                    <constraint firstItem="tK1-eS-LXt" firstAttribute="top" secondItem="iBV-X0-MWk" secondAttribute="bottom" constant="5" id="gNR-Ro-tNY"/>
+                    <constraint firstItem="tK1-eS-LXt" firstAttribute="leading" secondItem="PlP-NZ-gQo" secondAttribute="leading" constant="10" id="hK4-Z3-cHn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="descLb" destination="tK1-eS-LXt" id="bBf-TP-sRd"/>
+                <outlet property="iconBtn" destination="NKs-oH-ay2" id="81p-hu-7Ht"/>
+                <outlet property="titleLb" destination="iBV-X0-MWk" id="kav-Da-K6o"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
